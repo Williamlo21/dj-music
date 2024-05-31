@@ -1,0 +1,22 @@
+<?php
+
+namespace App\Models;
+
+use Illuminate\Database\Eloquent\Factories\HasFactory;
+use Illuminate\Database\Eloquent\Model;
+
+class Persona extends Model
+{
+    use HasFactory;
+
+    protected $fillable = [
+        'nombres',
+        'apellidos',
+        'numero_documento',
+    ];
+
+    public function user()
+    {
+        return $this->hasOne(User::class, 'persona_id');
+    }
+}
