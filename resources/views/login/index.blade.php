@@ -3,7 +3,7 @@
 
 @endsection
 @section('content')
-<div class="card">
+
     <div class="card-body">
         <div class="row justify-content-center">
             <div class="col-md-6">
@@ -32,7 +32,7 @@
             </div>
         </div>
     </div>
-</div>
+
 @endsection
 @section('content')
 
